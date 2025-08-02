@@ -1,15 +1,15 @@
 // // Expected Output: ['Laptop', 'Mobile', 'Watch']
 
-// // let products = ['Laptop', 'Mobile', 'Tablet', 'Camera', 'Watch'];
-// // let result = products.splice(0,3)
-// // console.log(result)
+// let products = ['Laptop', 'Mobile', 'Tablet', 'Camera', 'Watch'];
+// let result = products.splice(0,3)
+// console.log(result)
 
 
 // // Expected Output: ['Ali', 'Nina', 'Omar', 'Sara', 'Zoya']
 
-// // let students = ['Ali', 'Sara', 'Zoya'];
-// // let addStudents = students.splice(1,0,"Nina","Omar")
-// // console.log(students)
+// let students = ['Ali', 'Sara', 'Zoya'];
+// let addStudents = students.splice(1,0,"Nina","Omar")
+// console.log(students)
 
 
 // // Expected Output: ['Zainab', 'Ali', 'Farhan']
@@ -22,26 +22,26 @@
 
 // // Expected Output: [390, 310]
 
-let sales = [220, 300, 280, 150, 400, 390, 310];
-let lastTwoDays= sales.splice(-2)
-console.log(lastTwoDays)
+// let sales = [220, 300, 280, 150, 400, 390, 310];
+// let lastTwoDays= sales.splice(-2)
+// console.log(lastTwoDays)
 
 
 
 // // Expected Output: [{name: 'Ahmed', active: true}, {name: 'John', active: true}]
 
-// // let users = [
-// //   {name: 'Ahmed', active: true},
-// //   {name: 'Mira', active: false},
-// //   {name: 'John', active: true},
-// // ];
+// let users = [
+//   {name: 'Ahmed', active: true},
+//   {name: 'Mira', active: false},
+//   {name: 'John', active: true},
+// ];
 
-// // const activeUsers = users.filter(function(x){
-// //    if(x.active == true ){
-// //     return x;
-// //    }
-// // })
-// // console.log(activeUsers)
+// const activeUsers = users.filter(function(x){
+//    if(x.active == true ){
+//     return x;
+//    }
+// })
+// console.log(activeUsers)
 
 
 // // Expected Output: ['1234567890', '9876543210']
@@ -51,7 +51,7 @@ console.log(lastTwoDays)
 // console.log(validateNumbers)
 
 
-// // Expected Output: [118, 236, 354]
+// Expected Output: [118, 236, 354]
 
 // let prices = [100, 200, 300];
 // let gstPrices = prices.map(x=>x*1.18)

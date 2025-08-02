@@ -4,22 +4,22 @@
 //   { name: "Pen", total: 30 },
 //   { name: "Notebook", total: 100 },
 //   { name: "Bag", total: 400 }
-// ]
+// // ]
 
-let items = [
-  { name: "Pen", qty: 3, price: 10 },
-  { name: "Notebook", qty: 2, price: 50 },
-  { name: "Bag", qty: 1, price: 400 }
-];
+// let items = [
+//   { name: "Pen", qty: 3, price: 10 },
+//   { name: "Notebook", qty: 2, price: 50 },
+//   { name: "Bag", qty: 1, price: 400 }
+// ];
 
-let totalAmount = items.map(function(x){
-    return {    
-    name: x.name,
-    total: x.qty * x.price
-  };
+// let totalAmount = items.map(function(x){
+//     return {    
+//     name: x.name,
+//     total: x.qty * x.price
+//   };
 
-})
-console.log(totalAmount)
+// })
+// console.log(totalAmount)
 
 
 
@@ -28,13 +28,13 @@ console.log(totalAmount)
 // ['Ali', 'Sara']
 
 
-let users = ['Ali', 'Sara', 'Zoya', 'Ali', 'Zara', 'Sara'];
+// let users = ['Ali', 'Sara', 'Zoya', 'Ali', 'Zara', 'Sara'];
 
-let duplicate=users.filter((name,index,arr)=>{
-    return arr.indexOf(name) !== arr.lastIndexOf(name) && arr.indexOf(name) === index;
+// let duplicate=users.filter((name,index,arr)=>{
+//     return arr.indexOf(name) !== arr.lastIndexOf(name) && arr.indexOf(name) === index;
 
-})
-console.log(duplicate)
+// })
+// console.log(duplicate)
 
 
 // ✅ Expected Output:
@@ -51,6 +51,7 @@ let total = orders.reduce((acc,{product,qty})=>{
     acc[product]=(acc[product]||0)+qty
     return acc
 },{});
+// console.log(total);
 let soldMore = Object.entries(total).reduce((max,curr)=>{
     return curr[1]>max[1]?curr:max;
 })[0];
