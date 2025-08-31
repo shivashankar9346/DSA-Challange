@@ -5,26 +5,26 @@
 // return the length of the longest subarray whose sum is less than or equal to k.
 
 
-let nums = [2, 1, 5, 1, 3, 2]
-let k = 8  
-function longestSubArray(nums,k){
-    let maxLength=0;
-    for(let i=0;i<nums.length;i++){
-        let sum=0;
-        for(j=i;j<nums.length;j++){
-            sum+=nums[j]
-            if(sum<=k){
-                maxLength=Math.max(maxLength,j-i+1)
+// let nums = [2, 1, 5, 1, 3, 2]
+// let k = 8  
+// function longestSubArray(nums,k){
+//     let maxLength=0;
+//     for(let i=0;i<nums.length;i++){
+//         let sum=0;
+//         for(j=i;j<nums.length;j++){
+//             sum+=nums[j]
+//             if(sum<=k){
+//                 maxLength=Math.max(maxLength,j-i+1)
 
-            }else{
-                break
-            }
-        }
+//             }else{
+//                 break
+//             }
+//         }
 
-    }
-    return maxLength
-}
-console.log(longestSubArray(nums,k));
+//     }
+//     return maxLength
+// }
+// console.log(longestSubArray(nums,k));
 
 
 
