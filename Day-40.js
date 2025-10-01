@@ -32,6 +32,15 @@ class DoubleLinkedList {
             this.tail.next = null;
         }
     }
+     getLength() {
+        let len = 0;
+        let cur = this.head;
+        while (cur) {
+            len++;
+            cur = cur.next;
+        }
+        return len;
+    }
 
     deletePostAtIndex(index) {
         if (index < 0) return;
@@ -42,6 +51,7 @@ class DoubleLinkedList {
             i++;
         }
         if (!cur) return;
+        
         if (cur === this.head) {
             this.head = this.head.next;
             if (this.head) this.head.prev = null;
@@ -53,15 +63,7 @@ class DoubleLinkedList {
         }
     }
 
-    getLength() {
-        let len = 0;
-        let cur = this.head;
-        while (cur) {
-            len++;
-            cur = cur.next;
-        }
-        return len;
-    }
+   
 
     showFeedForward() {
         let res = [];
