@@ -40,7 +40,7 @@ class circularLinkedList{
     }
     Display(){
         if(!this.head){
-            console.log("");
+            console.log("Empty");
             return
         }
 
