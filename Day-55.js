@@ -38,4 +38,3 @@ function findGreater(arr){
       return result;
 }
 console.log(findGreater([4, 5, 2, 25]));
-console.log(findGreater([13, 7, 6, 12]));
