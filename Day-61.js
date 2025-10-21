@@ -45,7 +45,7 @@ function firstNegativeInWindow(A, K) {
     return result;
 }
 
-let A = [12, -1, -7, 8, -15, 30, 16, 28];
+let A = [12, -1, -7, 8, -15, 35, 16, 28];
 let K = 3;
 
 console.log(firstNegativeInWindow(A, K).join(" "));
