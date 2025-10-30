@@ -1,8 +1,8 @@
-function printNumbers(n) {
-    if (n <= 0) return; 
-    printNumbers(n - 1); 
-    console.log(n); 
+function sumOfDigits(n) {
+    if (n === 0) return 0; 
+    let lastDigit = n % 10;
+    let remaining = Math.floor(n / 10);
+    return lastDigit + sumOfDigits(remaining);
 }
 
-printNumbers(5);
-
+console.log(sumOfDigits(1234)); 
